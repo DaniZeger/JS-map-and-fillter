@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/app.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>JS map and fillter</title>
+  </head>
+  <body>
+    <h1>Car list</h1>
+
+    <h3>Insert you car details:</h3>
+
+    <label for="car">Your car is:</label>
+    <input type="text" name="car" id="car" placeholder="Car" />
+    <label for="color">Your car color is:</label>
+    <input type="text" name="color" id="color" placeholder="Color" />
+    <label for="year">Your car Year of Production is:</label>
+    <input type="number" name="year" id="year" placeholder="0000" />
+    <button id="submit-btn" onclick="submit()">Submit</button>
+
+    <h3>Display car by year:</h3>
+    <label for="year-display"></label>
+    <input
+      type="number"
+      name="year-display"
+      id="year-display"
+      placeholder="0000"
+    />
+    <button id="display-btn" onclick="display()">Show me!</button>
+    <div id="wraper"></div>
+  </body>
+</html>
